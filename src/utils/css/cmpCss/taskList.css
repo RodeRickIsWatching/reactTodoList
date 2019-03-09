@@ -1,0 +1,102 @@
+.nav-title-container {
+  padding: 12px 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 36px;
+  line-height: 36px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.input-container {
+  margin: 0 16px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  padding: 0 13px;
+  height: 36px;
+  line-height: 36px;
+}
+.input-container input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+.input-container input::placeholder {
+  color: rgba(0, 0, 0, 0.18);
+}
+
+.task-info-container {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.state-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12px;
+  padding: 0 18px;
+  height: 36px;
+  line-height: 36px;
+}
+.division {
+  display: block;
+  position: absolute;
+  left: 18px;
+  height: 1px;
+  width: calc(100% - 36px);
+  margin: -1px 0;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.division.off {
+  display: none;
+}
+.task-info-container ul.on {
+  /* display: block; */
+}
+.task-info-container ul {
+  /* display: none; */
+  max-height: 0px;
+  transition: max-height 0.3s ease-in-out;
+}
+.task-info-container ul li {
+  display: flex;
+  padding: 0 18px;
+  font-size: 13px;
+  height: 38px;
+  line-height: 38px;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.click-box {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.taskList-info {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.title-info {
+  display: inline-block;
+  width: 80%;
+}
+.date-info {
+  float: right;
+  margin-right: 20px;
+  font-size: 12px;
+  transform: scale(0.9);
+}
+
+.click-box.disable {
+  cursor: not-allowed !important;
+}

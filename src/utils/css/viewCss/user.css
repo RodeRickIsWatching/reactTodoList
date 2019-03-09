@@ -1,0 +1,19 @@
+.user-container {
+  display: flex;
+  height: 100vh;
+}
+.nav-container {
+  flex: 1;
+  background-color: #5069c4;
+}
+.task-title-container {
+  flex: 3;
+  background-color: #fff;
+  border-left: 1px solid #ededed;
+}
+.text-container {
+  flex: 2;
+  background-color: #fafafa;
+  border-left: 1px solid #ededed;
+}
+

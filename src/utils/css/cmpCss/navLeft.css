@@ -1,0 +1,62 @@
+.user-info-container {
+  padding: 12px;
+}
+.avatar-container {
+  display: inline-block;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  line-height: 36px;
+}
+
+.avatar-container img {
+  height: 36px;
+}
+.user-info-container .id {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 0 0 10px;
+  max-width: 100px;
+  cursor: pointer;
+  line-height: 36px;
+  color: #fff;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.nav-list-container ul:not(:last-child)::after {
+  content: "";
+  height: 1px;
+  display: block;
+  background: rgba(20, 20, 20, 0.2);
+  margin: 10px 0;
+}
+
+.nav-list-container {
+  font-weight: 300;
+}
+.nav-list-container li {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  font-size: 14px;
+}
+.nav-list-container li a {
+  color: #fff;
+  opacity: 0.7;
+  display: block;
+  text-decoration: none;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px 0 12px;
+}
+.nav-active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-list-container li a:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
