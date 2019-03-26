@@ -1,3 +1,7 @@
+### **以后会重新写新项目，这个只是拿来熟悉一下react**
+（主要是想修改项目的时候，忘记自己写了什么，没写注释真的是重构火葬场）
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
