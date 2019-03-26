@@ -1,3 +1,6 @@
+### **以后会重新写新项目，这个只是拿来熟悉一下react**
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
