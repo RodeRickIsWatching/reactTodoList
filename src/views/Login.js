@@ -86,9 +86,9 @@ class Login extends React.Component {
               </span>
               <input
                 placeholder="密码"
-                password
+                type='password'
                 ref={this.password}
-                value={this.state.password.replace(/[\s\S]/g, "*")}
+                value={this.state.password}
                 onChange={e => {
                   let val = e.target.value;
                   this.setState({

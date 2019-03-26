@@ -36,14 +36,14 @@ class User extends React.Component {
         }
       ],
       subNav: [
-        {
-          key: "done",
-          name: "已完成"
-        },
-        {
-          key: "dust",
-          name: "垃圾箱"
-        }
+        // {
+        //   key: "done",
+        //   name: "已完成"
+        // },
+        // {
+        //   key: "dust",
+        //   name: "垃圾箱"
+        // }
       ],
       avatarSrc:
         "https://profile-photo.s3.cn-north-1.amazonaws.com.cn/files/avatar/50686/MTAxMzcyMzE1NjNrZTBmYTZ1/avatar.png?v=6b0490d1b7c472496ff7f427f0e0b969"

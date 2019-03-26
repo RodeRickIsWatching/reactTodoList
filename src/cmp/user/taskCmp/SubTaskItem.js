@@ -1,4 +1,14 @@
 import React from "react";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
+
+import {
+  A_updateNowTask,
+  A_savePrevTask,
+  A_addNewTask
+} from "../../../utils/reducerUtils/actionMap";
+
+
 function getTimeStringType(_date) {
   let dayArr = ["日", "一", "二", "三", "四", "五", "六"];
 
@@ -86,4 +96,29 @@ class SubTaskItem extends React.Component {
     );
   };
 }
-export default SubTaskItem;
+
+
+const mapStateToProps = state => {
+  return {
+    defaultList: state.defaultList,
+    nowTaskObj: state.nowTaskObj
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    updateNowTask: (type, val) => {
+      dispatch(A_updateNowTask(type, val));
+    },
+    savePrevTask: (type, val) => {
+      dispatch(A_savePrevTask(type, val));
+    },
+    addNewTask: (type, val) => {
+      dispatch(A_addNewTask(type, val));
+    }
+  };
+};
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withRouter(SubTaskItem));
