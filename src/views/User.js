@@ -12,7 +12,6 @@ import {
 class User extends React.Component {
   constructor(props) {
     super(props);
-    this.methods.updateNowNav(this.props.router.match.params.navList);
     this.props.renderDefaultTaskList("RENDER_DEFAULT_TASK_LIST", "1");
   }
 
@@ -53,7 +52,7 @@ class User extends React.Component {
   };
 
   componentDidMount = () => {
-    this.props.renderDefaultTaskList("RENDER_DEFAULT_TASK_LIST", "1");
+    this.methods.updateNowNav(this.props.router.match.params.navList);
   };
 
   shouldComponentUpdate = (nextProps, nextState) => {
